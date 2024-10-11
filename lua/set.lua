@@ -1,5 +1,7 @@
 vim.opt.guicursor = ""
 
+vim.api.nvim_exec('language en_US', true)
+
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
@@ -10,11 +12,13 @@ vim.opt.expandtab = true
 
 vim.opt.smartindent = true
 
-vim.opt.wrap = false
+vim.g.python3_host_prog = "D:/rogramms/py/python.exe"
 
+vim.opt.wrap = false
+vim.g.undotree_DiffCommand = "FC"
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+vim.opt.undodir = "D:/.vim/undodir"
 vim.opt.undofile = true
 vim.opt.clipboard = "unnamedplus"
 

@@ -23,12 +23,14 @@ return {
       lspconfig.zls.setup({
         capabilities = capabilities
       })
+      lspconfig.pylsp.setup({
+        capabilities = capabilities
+      })
       lspconfig.lua_ls.setup({
         capabilities = capabilities
       })
       lspconfig.csharp_ls.setup({
 	      capabilities = capabilities,
-	      cmd = { "/home/paviel/.dotnet/tools/csharp-ls" },
       })
       lspconfig.clangd.setup({
         capabilities = capabilities
