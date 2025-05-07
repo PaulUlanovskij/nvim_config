@@ -1,6 +1,6 @@
 vim.opt.guicursor = ""
 
-vim.api.nvim_exec('language en_US', true)
+--vim.api.nvim_exec('language en_US', true)
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
@@ -12,7 +12,7 @@ vim.opt.expandtab = true
 
 vim.opt.smartindent = true
 
-vim.g.python3_host_prog = "D:/rogramms/py/python.exe"
+--vim.g.python3_host_prog = "D:/rogramms/py/python.exe"
 
 vim.opt.wrap = false
 vim.g.undotree_DiffCommand = "FC"

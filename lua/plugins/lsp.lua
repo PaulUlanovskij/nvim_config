@@ -20,6 +20,16 @@ return {
       local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
       local lspconfig = require("lspconfig")
+      lspconfig.tinymist.setup({
+        capabilities = capabilities,
+        settings = {
+            formatterMode = "typstyle",
+            exportPdf = "never"
+          },
+      })
+      lspconfig.ols.setup({
+        capabilities = capabilities
+      })
       lspconfig.zls.setup({
         capabilities = capabilities
       })
